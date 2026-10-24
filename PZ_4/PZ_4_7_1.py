@@ -6,11 +6,12 @@ while True:
         if a >= b:
             print("Ошибка: число a должно быть строго меньше b. Попробуйте еще раз.")
             continue
-        p = 1
-        i = a
-        while i <= b:
-            p *= i
-            i += 1
-        print(f"Произведение чисел: {p}")
     except ValueError:
         print("Ошибка ввода! Пожалуйста, вводите только целые числа.")
+        continue
+    p = 1
+    i = a
+    while i <= b:
+        p *= i
+        i += 1
+    print(f"Произведение чисел: {p}")
