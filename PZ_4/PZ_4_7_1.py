@@ -7,8 +7,10 @@ while True:
             print("Ошибка: число a должно быть строго меньше b. Попробуйте еще раз.")
             continue
         p = 1
-        for i in range(a, b+1):
+        i = a
+        while i <= b:
             p *= i
+            i += 1
         print(f"Произведение чисел: {p}")
     except ValueError:
         print("Ошибка ввода! Пожалуйста, вводите только целые числа.")
