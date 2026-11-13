@@ -6,7 +6,6 @@ def sum_num(n):
         sum += n % 10
         n //= 10
     return sum
-
 a,b,c = int(input("Введите число")), int(input("Введите число")), int(input("Введите число"))
 sum_a = sum_num(a)
 sum_b = sum_num(b)

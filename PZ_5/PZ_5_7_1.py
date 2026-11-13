@@ -2,7 +2,6 @@
 def calculate_sum(n, m):
     if n > m:
         n, m = m, n
-        
     total_sum = 0
     current = n
     while current <= m:
